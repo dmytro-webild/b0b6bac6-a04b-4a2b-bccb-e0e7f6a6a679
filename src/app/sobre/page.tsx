@@ -93,10 +93,10 @@ export default function AboutPage() {
           features={[
             {
               id: 1,
-              title: "Autenticidade Mágica",              description: "Cada produto e serviço é genuíno e certificado. Não acreditamos em atalhos espirituais. A magia verdadeira exige dedicação, sinceridade e respeito às tradições ancestrais.",              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg"},
+              title: "Autenticidade Mágica",              description: "Cada produto e serviço é genuíno e certificado. Não acreditamos em atalhos espirituais. A magia verdadeira exige dedicação, sinceridade e respeito às tradições ancestrais.",              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg?_wi=3"},
             {
               id: 2,
-              title: "Ética e Responsabilidade",              description: "Praticamos a magia com responsabilidade consciente. Nossos serviços sempre respeitam o livre arbítrio. Trabalhamos apenas com intenções positivas e energias construtivas.",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg"},
+              title: "Ética e Responsabilidade",              description: "Praticamos a magia com responsabilidade consciente. Nossos serviços sempre respeitam o livre arbítrio. Trabalhamos apenas com intenções positivas e energias construtivas.",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg?_wi=3"},
             {
               id: 3,
               title: "Acolhimento e Respeito",              description: "Acolhemos todos os buscadores espirituais com respeito e sem julgamento. Cada pessoa está em sua própria jornada. Nosso papel é guiar, nunca impor.",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg?_wi=1"},
