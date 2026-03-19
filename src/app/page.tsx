@@ -90,7 +90,7 @@ export default function HomePage() {
             },
           ]}
           buttonAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/reiki-symbols-concept-with-crystals_23-2149324229.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/reiki-symbols-concept-with-crystals_23-2149324229.jpg?_wi=1"
           imageAlt="Altar sagrado com cristais e símbolos esotéricos"
           useInvertedBackground={true}
         />
@@ -117,25 +117,25 @@ export default function HomePage() {
               id: 1,
               title: "Leitura de Tarot",
               description: "Descubra os segredos do passado, presente e futuro através das cartas sagradas. Interpretação profunda e orientação espiritual.",
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg?_wi=1",
             },
             {
               id: 2,
               title: "Consultas Espirituais",
               description: "Conexão direta com sua energia vital. Identificamos bloqueios, orientamos caminhos e ativamos seu poder interior.",
-              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-book-club_23-2150062147.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-book-club_23-2150062147.jpg?_wi=1",
             },
             {
               id: 3,
               title: "Limpeza Energética",
               description: "Rituais de purificação para limpar sua aura. Remove energias negativas e restaura seu bem-estar espiritual.",
-              imageSrc: "http://img.b2bpic.net/free-photo/full-shot-meditation-guide-with-singing-bowls_23-2149386437.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/full-shot-meditation-guide-with-singing-bowls_23-2149386437.jpg?_wi=1",
             },
             {
               id: 4,
               title: "Amarração Amorosa",
               description: "Ritual ancestral para fortalecer laços amorosos e atrair amor genuíno em sua vida. Trabalho realizado com total sigilo.",
-              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg?_wi=1",
             },
           ]}
         />
@@ -159,7 +159,7 @@ export default function HomePage() {
               name: "Marina Silva",
               handle: "@marina.mistica",
               testimonial: "A leitura de tarot mudou minha vida! Consegui clareza sobre meu caminho profissional. Recomendo muito!",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-brunette-girl-posing-with-coat_23-2148135998.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-brunette-girl-posing-with-coat_23-2148135998.jpg?_wi=1",
               icon: Star,
             },
             {
@@ -167,7 +167,7 @@ export default function HomePage() {
               name: "Carlos Mendes",
               handle: "@carlos.energia",
               testimonial: "Os cristais que comprei aqui realmente funcionam. Sinto a energia diferente no meu espaço.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-beige-turtleneck-looking-front-with-hand-his-chin-thinking-standing-lilac-wall_141793-53759.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-beige-turtleneck-looking-front-with-hand-his-chin-thinking-standing-lilac-wall_141793-53759.jpg?_wi=1",
               icon: Star,
             },
             {
@@ -175,7 +175,7 @@ export default function HomePage() {
               name: "Juliana Santos",
               handle: "@juliana.luz",
               testimonial: "A consulta espiritual foi profunda e transformadora. Consegui identificar meus bloqueios e agora consigo avançar.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-woman-standing-universe-texture-projection_23-2149512139.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-woman-standing-universe-texture-projection_23-2149512139.jpg?_wi=1",
               icon: Star,
             },
             {
@@ -183,7 +183,7 @@ export default function HomePage() {
               name: "Amanda Costa",
               handle: "@amanda.ritual",
               testimonial: "A limpeza energética despertou novamente meu entusiasmo pela vida. Sinto-me renovada e conectada.",
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-adult-woman-digital-art-style_23-2151122703.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/portrait-adult-woman-digital-art-style_23-2151122703.jpg?_wi=1",
               icon: Star,
             },
             {
@@ -191,7 +191,7 @@ export default function HomePage() {
               name: "Bruno Oliveira",
               handle: "@bruno.magia",
               testimonial: "Produto de qualidade excepcional! Os incensos fragrância divina e a energia é pura.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-grey-shirt-looking-front-clenching-fists-happy-excited-standing-pink-wall_141793-53277.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-grey-shirt-looking-front-clenching-fists-happy-excited-standing-pink-wall_141793-53277.jpg?_wi=1",
               icon: Star,
             },
             {
@@ -199,7 +199,7 @@ export default function HomePage() {
               name: "Fernanda Rocha",
               handle: "@fernanda.espirito",
               testimonial: "Equipe atenciosa e conhecedora. Senti-me acolhida e orientada desde o primeiro contato.",
-              imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-leaning-wall_23-2147611441.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-leaning-wall_23-2147611441.jpg?_wi=1",
               icon: Star,
             },
           ]}
@@ -278,7 +278,7 @@ Tem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiri
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=1"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
