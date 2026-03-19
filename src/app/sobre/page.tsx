@@ -91,7 +91,7 @@ export default function AboutPage() {
             },
           ]}
           buttonAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/reiki-symbols-concept-with-crystals_23-2149324229.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/reiki-symbols-concept-with-crystals_23-2149324229.jpg?_wi=2"
           imageAlt="altar sagrado cristais velas símbolo esotéricos"
           useInvertedBackground={true}
         />
@@ -115,7 +115,7 @@ export default function AboutPage() {
               name: "Marina Silva",
               handle: "@marina.mistica",
               testimonial: "A leitura de tarot mudou minha vida! Consegui clareza sobre meu caminho profissional. Recomendo muito!",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-brunette-girl-posing-with-coat_23-2148135998.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-brunette-girl-posing-with-coat_23-2148135998.jpg?_wi=2",
               icon: Heart,
             },
             {
@@ -123,7 +123,7 @@ export default function AboutPage() {
               name: "Carlos Mendes",
               handle: "@carlos.energia",
               testimonial: "Os cristais que comprei aqui realmente funcionam. Sinto a energia diferente no meu espaço.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-beige-turtleneck-looking-front-with-hand-his-chin-thinking-standing-lilac-wall_141793-53759.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-beige-turtleneck-looking-front-with-hand-his-chin-thinking-standing-lilac-wall_141793-53759.jpg?_wi=2",
               icon: Heart,
             },
             {
@@ -131,7 +131,7 @@ export default function AboutPage() {
               name: "Juliana Santos",
               handle: "@juliana.luz",
               testimonial: "A consulta espiritual foi profunda e transformadora. Consegui identificar meus bloqueios e agora consigo avançar.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-woman-standing-universe-texture-projection_23-2149512139.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-woman-standing-universe-texture-projection_23-2149512139.jpg?_wi=2",
               icon: Heart,
             },
             {
@@ -139,7 +139,7 @@ export default function AboutPage() {
               name: "Amanda Costa",
               handle: "@amanda.ritual",
               testimonial: "A limpeza energética despertou novamente meu entusiasmo pela vida. Sinto-me renovada e conectada.",
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-adult-woman-digital-art-style_23-2151122703.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/portrait-adult-woman-digital-art-style_23-2151122703.jpg?_wi=2",
               icon: Heart,
             },
             {
@@ -147,7 +147,7 @@ export default function AboutPage() {
               name: "Bruno Oliveira",
               handle: "@bruno.magia",
               testimonial: "Produto de qualidade excepcional! Os incensos fragrância divina e a energia é pura.",
-              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-grey-shirt-looking-front-clenching-fists-happy-excited-standing-pink-wall_141793-53277.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-grey-shirt-looking-front-clenching-fists-happy-excited-standing-pink-wall_141793-53277.jpg?_wi=2",
               icon: Heart,
             },
             {
@@ -155,7 +155,7 @@ export default function AboutPage() {
               name: "Fernanda Rocha",
               handle: "@fernanda.espirito",
               testimonial: "Equipe atenciosa e conhecedora. Senti-me acolhida e orientada desde o primeiro contato.",
-              imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-leaning-wall_23-2147611441.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/laughing-woman-leaning-wall_23-2147611441.jpg?_wi=2",
               icon: Heart,
             },
           ]}
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=4"
           imageAlt="noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
