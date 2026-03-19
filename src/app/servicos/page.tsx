@@ -97,25 +97,25 @@ export default function ServicesPage() {
               id: 1,
               title: "Leitura de Tarot",
               description: "Descubra os segredos do passado, presente e futuro através das cartas sagradas. Interpretação profunda e orientação espiritual.",
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg?_wi=2",
             },
             {
               id: 2,
               title: "Consultas Espirituais",
               description: "Conexão direta com sua energia vital. Identificamos bloqueios, orientamos caminhos e ativamos seu poder interior.",
-              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-book-club_23-2150062147.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-book-club_23-2150062147.jpg?_wi=2",
             },
             {
               id: 3,
               title: "Limpeza Energética",
               description: "Rituais de purificação para limpar sua aura. Remove energias negativas e restaura seu bem-estar espiritual.",
-              imageSrc: "http://img.b2bpic.net/free-photo/full-shot-meditation-guide-with-singing-bowls_23-2149386437.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/full-shot-meditation-guide-with-singing-bowls_23-2149386437.jpg?_wi=2",
             },
             {
               id: 4,
               title: "Amarração Amorosa",
               description: "Ritual ancestral para fortalecer laços amorosos e atrair amor genuíno em sua vida. Trabalho realizado com total sigilo.",
-              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg?_wi=2",
             },
           ]}
         />
@@ -144,7 +144,7 @@ export default function ServicesPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=3"
           imageAlt="noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
