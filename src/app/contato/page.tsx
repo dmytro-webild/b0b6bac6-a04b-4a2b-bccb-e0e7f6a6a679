@@ -1,13 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import ContactText from "@/components/sections/contact/ContactText";
+import HeroBillboardCarousel from "@/components/sections/hero/HeroBillboardCarousel";
+import ContactCTA from "@/components/sections/contact/ContactCTA";
 import FooterMedia from "@/components/sections/footer/FooterMedia";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Mail, MessageCircle, Phone, MapPin, Instagram, Facebook, Youtube } from "lucide-react";
 
-export default function ContatoPage() {
+export default function ContactPage() {
   const navItems = [
     { name: "Home", id: "home" },
     { name: "Produtos", id: "products" },
@@ -16,44 +18,24 @@ export default function ContatoPage() {
     { name: "Contato", id: "contact" },
   ];
 
-  const footerColumns = [
-    {
-      title: "Navegação",
-      items: [
-        { label: "Home", href: "/" },
-        { label: "Produtos", href: "/produtos" },
-        { label: "Serviços", href: "/servicos" },
-        { label: "Sobre", href: "/sobre" },
-      ],
-    },
-    {
-      title: "Contato",
-      items: [
-        { label: "WhatsApp", href: "https://wa.me/5511999999999" },
-        { label: "Email", href: "mailto:contato@arcanamistica.com.br" },
-        { label: "Telefone", href: "tel:+5511988888888" },
-        { label: "Localização", href: "#" },
-      ],
-    },
-    {
-      title: "Redes Sociais",
-      items: [
-        { label: "Instagram", href: "https://instagram.com/arcanamistica" },
-        { label: "Facebook", href: "https://facebook.com/arcanamistica" },
-        { label: "TikTok", href: "https://tiktok.com/@arcanamistica" },
-        { label: "YouTube", href: "https://youtube.com/@arcanamistica" },
-      ],
-    },
-    {
-      title: "Legal",
-      items: [
-        { label: "Política de Privacidade", href: "#" },
-        { label: "Termos de Serviço", href: "#" },
-        { label: "Troca e Devolução", href: "#" },
-        { label: "FAQ", href: "#faq" },
-      ],
-    },
-  ];
+  const [formData, setFormData] = useState({
+    name: "",    email: "",    phone: "",    subject: "",    message: ""});
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+    alert("Mensagem enviada com sucesso! Retornaremos em breve.");
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+  };
 
   return (
     <ThemeProvider
@@ -72,34 +54,275 @@ export default function ContatoPage() {
         <NavbarStyleApple brandName="Arcana Mística" navItems={navItems} />
       </div>
 
-      <div id="contact" data-section="contact">
-        <ContactText
-          text="Entre em Contato\n\nTem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
-          animationType="entrance-slide"
+      <div id="hero" data-section="hero">
+        <HeroBillboardCarousel
+          title="Entre em Contato com a Magia"
+          description="Tem dúvidas sobre nossos produtos e serviços? Deseja agendar uma consulta espiritual? Estamos aqui para orientá-lo em sua jornada mágica. Escolha o melhor meio de comunicação para você."
+          tag="Contato Direto"
+          tagIcon={Sparkles}
+          tagAnimation="slide-up"
           buttons={[
             {
-              text: "WhatsApp",
-              href: "https://wa.me/5511999999999",
-            },
+              text: "WhatsApp",              href: "https://wa.me/5511999999999"},
             {
-              text: "Email",
-              href: "mailto:contato@arcanamistica.com.br",
-            },
+              text: "Voltar ao Início",              href: "/"},
           ]}
+          buttonAnimation="slide-up"
           background={{
-            variant: "sparkles-gradient",
-          }}
-          useInvertedBackground={true}
+            variant: "sparkles-gradient"}}
+          mediaItems={[
+            {
+              imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-reading-tarot_23-2150273168.jpg",              imageAlt: "Cartas de tarot dispostas em círculo sagrado"},
+            {
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg",              imageAlt: "Velas roxas e douradas em altar espiritual"},
+            {
+              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg",              imageAlt: "Cristais esotéricos brilhando com energia mágica"},
+          ]}
+        />
+      </div>
+
+      <div id="contact-form" data-section="contact-form" className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* WhatsApp */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-var(--accent) bg-var(--card) hover:shadow-lg transition">
+              <div className="mb-4 p-4 rounded-full bg-var(--primary-cta) bg-opacity-10">
+                <MessageCircle className="w-8 h-8 text-var(--primary-cta)" />
+              </div>
+              <h3 className="text-lg font-semibold text-var(--foreground) mb-2">WhatsApp</h3>
+              <p className="text-sm text-var(--foreground) opacity-70 mb-4">Mensagens rápidas e diretas</p>
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 rounded-full bg-var(--primary-cta) text-white font-medium hover:opacity-90 transition"
+              >
+                Abrir Chat
+              </a>
+            </div>
+
+            {/* Email */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-var(--accent) bg-var(--card) hover:shadow-lg transition">
+              <div className="mb-4 p-4 rounded-full bg-var(--primary-cta) bg-opacity-10">
+                <Mail className="w-8 h-8 text-var(--primary-cta)" />
+              </div>
+              <h3 className="text-lg font-semibold text-var(--foreground) mb-2">Email</h3>
+              <p className="text-sm text-var(--foreground) opacity-70 mb-4">Responderemos em até 24h</p>
+              <a
+                href="mailto:contato@arcanamistica.com.br"
+                className="inline-block px-4 py-2 rounded-full bg-var(--primary-cta) text-white font-medium hover:opacity-90 transition"
+              >
+                Enviar Email
+              </a>
+            </div>
+
+            {/* Telefone */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-var(--accent) bg-var(--card) hover:shadow-lg transition">
+              <div className="mb-4 p-4 rounded-full bg-var(--primary-cta) bg-opacity-10">
+                <Phone className="w-8 h-8 text-var(--primary-cta)" />
+              </div>
+              <h3 className="text-lg font-semibold text-var(--foreground) mb-2">Telefone</h3>
+              <p className="text-sm text-var(--foreground) opacity-70 mb-4">Ligamos de segunda a sexta</p>
+              <a
+                href="tel:+5511988888888"
+                className="inline-block px-4 py-2 rounded-full bg-var(--primary-cta) text-white font-medium hover:opacity-90 transition"
+              >
+                (11) 98888-8888
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-var(--card) border border-var(--accent) rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-var(--foreground) mb-2">Formulário de Contato</h2>
+            <p className="text-var(--foreground) opacity-70 mb-6">Preencha o formulário abaixo e entraremos em contato com você em breve.</p>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Seu Nome"
+                  required
+                  className="w-full px-4 py-2 rounded-lg border border-var(--accent) bg-var(--background) text-var(--foreground) placeholder-var(--foreground) placeholder-opacity-50 focus:outline-none focus:border-var(--primary-cta) focus:ring-1 focus:ring-var(--primary-cta)"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Seu Email"
+                  required
+                  className="w-full px-4 py-2 rounded-lg border border-var(--accent) bg-var(--background) text-var(--foreground) placeholder-var(--foreground) placeholder-opacity-50 focus:outline-none focus:border-var(--primary-cta) focus:ring-1 focus:ring-var(--primary-cta)"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Seu Telefone (Opcional)"
+                  className="w-full px-4 py-2 rounded-lg border border-var(--accent) bg-var(--background) text-var(--foreground) placeholder-var(--foreground) placeholder-opacity-50 focus:outline-none focus:border-var(--primary-cta) focus:ring-1 focus:ring-var(--primary-cta)"
+                />
+                <select
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 rounded-lg border border-var(--accent) bg-var(--background) text-var(--foreground) focus:outline-none focus:border-var(--primary-cta) focus:ring-1 focus:ring-var(--primary-cta)"
+                >
+                  <option value="" disabled>
+                    Selecione um Assunto
+                  </option>
+                  <option value="consultation">Agendar Consulta</option>
+                  <option value="product">Dúvida sobre Produtos</option>
+                  <option value="service">Dúvida sobre Serviços</option>
+                  <option value="other">Outro Assunto</option>
+                </select>
+              </div>
+
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Sua Mensagem"
+                required
+                rows={6}
+                className="w-full px-4 py-2 rounded-lg border border-var(--accent) bg-var(--background) text-var(--foreground) placeholder-var(--foreground) placeholder-opacity-50 focus:outline-none focus:border-var(--primary-cta) focus:ring-1 focus:ring-var(--primary-cta) resize-none"
+              />
+
+              <button
+                type="submit"
+                className="w-full px-6 py-3 rounded-full bg-var(--primary-cta) text-white font-semibold hover:opacity-90 transition"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Social Media Links */}
+      <div id="social" data-section="social" className="py-16 px-4 bg-var(--card)">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-var(--foreground) text-center mb-2">Conecte-se Conosco nas Redes Sociais</h2>
+          <p className="text-var(--foreground) opacity-70 text-center mb-8">Acompanhe nossa comunidade espiritual e receba dicas diárias de magia</p>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            <a
+              href="https://instagram.com/arcanamistica"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-var(--primary-cta) text-var(--primary-cta) hover:bg-var(--primary-cta) hover:text-white transition"
+            >
+              <Instagram className="w-5 h-5" />
+              <span>Instagram</span>
+            </a>
+
+            <a
+              href="https://facebook.com/arcanamistica"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-var(--primary-cta) text-var(--primary-cta) hover:bg-var(--primary-cta) hover:text-white transition"
+            >
+              <Facebook className="w-5 h-5" />
+              <span>Facebook</span>
+            </a>
+
+            <a
+              href="https://youtube.com/@arcanamistica"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-var(--primary-cta) text-var(--primary-cta) hover:bg-var(--primary-cta) hover:text-white transition"
+            >
+              <Youtube className="w-5 h-5" />
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div id="contact-cta" data-section="contact-cta">
+        <ContactCTA
+          tag="Próximo Passo"
+          title="Pronto para Sua Jornada Espiritual?"
+          description="Entre em contato conosco agora e descubra como a magia ancestral pode transformar sua vida. Nossa equipe está pronta para acolhê-lo."
+          buttons={[
+            {
+              text: "Agendar Consulta",              href: "https://wa.me/5511999999999"},
+            {
+              text: "Explorar Produtos",              href: "/"},
+          ]}
+          buttonAnimation="slide-up"
+          background={{
+            variant: "sparkles-gradient"}}
+          useInvertedBackground={false}
         />
       </div>
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=5"
-          imageAlt="noite céu lua estrelas fundo místico"
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=1"
+          imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
-          columns={footerColumns}
+          columns={[
+            {
+              title: "Navegação",              items: [
+                {
+                  label: "Home",                  href: "/"},
+                {
+                  label: "Produtos",                  href: "/produtos"},
+                {
+                  label: "Serviços",                  href: "/"},
+                {
+                  label: "Sobre",                  href: "/sobre"},
+                {
+                  label: "Contato",                  href: "/contato"},
+              ],
+            },
+            {
+              title: "Contato",              items: [
+                {
+                  label: "WhatsApp",                  href: "https://wa.me/5511999999999"},
+                {
+                  label: "Email",                  href: "mailto:contato@arcanamistica.com.br"},
+                {
+                  label: "Telefone",                  href: "tel:+5511988888888"},
+                {
+                  label: "Localização",                  href: "#"},
+              ],
+            },
+            {
+              title: "Redes Sociais",              items: [
+                {
+                  label: "Instagram",                  href: "https://instagram.com/arcanamistica"},
+                {
+                  label: "Facebook",                  href: "https://facebook.com/arcanamistica"},
+                {
+                  label: "TikTok",                  href: "https://tiktok.com/@arcanamistica"},
+                {
+                  label: "YouTube",                  href: "https://youtube.com/@arcanamistica"},
+              ],
+            },
+            {
+              title: "Legal",              items: [
+                {
+                  label: "Política de Privacidade",                  href: "#"},
+                {
+                  label: "Termos de Serviço",                  href: "#"},
+                {
+                  label: "Troca e Devolução",                  href: "#"},
+                {
+                  label: "FAQ",                  href: "#faq"},
+              ],
+            },
+          ]}
         />
       </div>
     </ThemeProvider>
