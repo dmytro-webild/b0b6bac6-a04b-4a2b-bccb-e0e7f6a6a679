@@ -72,11 +72,11 @@ export default function ContactPage() {
             variant: "sparkles-gradient"}}
           mediaItems={[
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-reading-tarot_23-2150273168.jpg",              imageAlt: "Cartas de tarot dispostas em círculo sagrado"},
+              imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-reading-tarot_23-2150273168.jpg?_wi=1",              imageAlt: "Cartas de tarot dispostas em círculo sagrado"},
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg",              imageAlt: "Velas roxas e douradas em altar espiritual"},
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg?_wi=1",              imageAlt: "Velas roxas e douradas em altar espiritual"},
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg",              imageAlt: "Cristais esotéricos brilhando com energia mágica"},
+              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg?_wi=1",              imageAlt: "Cristais esotéricos brilhando com energia mágica"},
           ]}
         />
       </div>
