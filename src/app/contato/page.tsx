@@ -1,0 +1,107 @@
+"use client";
+
+import Link from "next/link";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
+import ContactText from "@/components/sections/contact/ContactText";
+import FooterMedia from "@/components/sections/footer/FooterMedia";
+import { Sparkles } from "lucide-react";
+
+export default function ContatoPage() {
+  const navItems = [
+    { name: "Home", id: "home" },
+    { name: "Produtos", id: "products" },
+    { name: "Serviços", id: "services" },
+    { name: "Sobre", id: "about" },
+    { name: "Contato", id: "contact" },
+  ];
+
+  const footerColumns = [
+    {
+      title: "Navegação",
+      items: [
+        { label: "Home", href: "/" },
+        { label: "Produtos", href: "/produtos" },
+        { label: "Serviços", href: "/servicos" },
+        { label: "Sobre", href: "/sobre" },
+      ],
+    },
+    {
+      title: "Contato",
+      items: [
+        { label: "WhatsApp", href: "https://wa.me/5511999999999" },
+        { label: "Email", href: "mailto:contato@arcanamistica.com.br" },
+        { label: "Telefone", href: "tel:+5511988888888" },
+        { label: "Localização", href: "#" },
+      ],
+    },
+    {
+      title: "Redes Sociais",
+      items: [
+        { label: "Instagram", href: "https://instagram.com/arcanamistica" },
+        { label: "Facebook", href: "https://facebook.com/arcanamistica" },
+        { label: "TikTok", href: "https://tiktok.com/@arcanamistica" },
+        { label: "YouTube", href: "https://youtube.com/@arcanamistica" },
+      ],
+    },
+    {
+      title: "Legal",
+      items: [
+        { label: "Política de Privacidade", href: "#" },
+        { label: "Termos de Serviço", href: "#" },
+        { label: "Troca e Devolução", href: "#" },
+        { label: "FAQ", href: "#faq" },
+      ],
+    },
+  ];
+
+  return (
+    <ThemeProvider
+      defaultButtonVariant="hover-magnetic"
+      defaultTextAnimation="background-highlight"
+      borderRadius="pill"
+      contentWidth="small"
+      sizing="mediumLarge"
+      background="aurora"
+      cardStyle="soft-shadow"
+      primaryButtonStyle="diagonal-gradient"
+      secondaryButtonStyle="layered"
+      headingFontWeight="semibold"
+    >
+      <div id="nav" data-section="nav">
+        <NavbarStyleApple brandName="Arcana Mística" navItems={navItems} />
+      </div>
+
+      <div id="contact" data-section="contact">
+        <ContactText
+          text="Entre em Contato\n\nTem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
+          animationType="entrance-slide"
+          buttons={[
+            {
+              text: "WhatsApp",
+              href: "https://wa.me/5511999999999",
+            },
+            {
+              text: "Email",
+              href: "mailto:contato@arcanamistica.com.br",
+            },
+          ]}
+          background={{
+            variant: "sparkles-gradient",
+          }}
+          useInvertedBackground={true}
+        />
+      </div>
+
+      <div id="footer" data-section="footer">
+        <FooterMedia
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg"
+          imageAlt="noite céu lua estrelas fundo místico"
+          logoText="Arcana Mística"
+          copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
+          columns={footerColumns}
+        />
+      </div>
+    </ThemeProvider>
+  );
+}
