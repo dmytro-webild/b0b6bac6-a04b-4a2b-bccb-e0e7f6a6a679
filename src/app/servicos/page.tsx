@@ -115,7 +115,7 @@ export default function ServicesPage() {
               id: 4,
               title: "Baralho Cigano",
               description: "leitura de cartas para orientação sobre amor, trabalho, decisões, etc.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774388115189-ay740he4.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774388191320-yxf7ma5a.jpg",
             },
           ]}
         />
