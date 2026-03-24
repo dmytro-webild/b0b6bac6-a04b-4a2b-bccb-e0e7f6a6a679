@@ -19,7 +19,7 @@ export default function ContactPage() {
   ];
 
   const footerColumns = (currentPageId) => {
-    let faqHref = "/#faq"; // Default to home page FAQ
+    const faqHref = "/#faq"; // Default to home page FAQ
 
     return [
       {
