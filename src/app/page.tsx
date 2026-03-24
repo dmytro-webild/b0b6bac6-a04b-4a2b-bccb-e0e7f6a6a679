@@ -35,7 +35,7 @@ export default function HomePage() {
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple brandName="Magia do Brilho" navItems={navItems} />
+        <NavbarStyleApple brandName="Magia Do Brilho" navItems={navItems} />
       </div>
 
       <div id="hero" data-section="hero">
