@@ -35,7 +35,7 @@ export default function HomePage() {
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple brandName="Magia Do Brilho" navItems={navItems} />
+        <NavbarStyleApple brandName="Magia do Brilho" navItems={navItems} />
       </div>
 
       <div id="hero" data-section="hero">
@@ -120,7 +120,7 @@ export default function HomePage() {
             },
             {
               id: 4,
-              title: "Amarração Amorosa",              description: "Ritual ancestral para fortalecer laços amorosos e atrair amor genuíno em sua vida. Trabalho realizado com total sigilo.",              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg?_wi=1",              buttons: [{ text: "Agendar Serviço", href: "/contato" }]
+              title: "Rituais de Prosperidade",              description: "Rituais ancestrais para atrair abundância, sucesso e remover bloqueios financeiros, promovendo a riqueza em todas as áreas da vida.",              imageSrc: "http://img.b2bpic.net/free-photo/golden-coin-gem-ring_23-2149512130.jpg?_wi=1",              buttons: [{ text: "Agendar Serviço", href: "/contato" }]
             }
           ]}
         />
@@ -217,7 +217,7 @@ export default function HomePage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif"
+          imageSrc="http://img.b2bpic.net/free-photo/stars-night-sky-moon-magical-abstract_23-2149324147.jpg?_wi=2"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Magia do Brilho"
           copyrightText="© 2024 Magia do Brilho | Guardiãs da Magia Ancestral | Todos os direitos reservados"
