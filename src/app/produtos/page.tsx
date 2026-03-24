@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import ProductCardThree from "@/components/sections/product/ProductCardThree";
+import ProductCardFour from "@/components/sections/product/ProductCardFour";
 import FooterMedia from "@/components/sections/footer/FooterMedia";
 import { Gem } from "lucide-react";
 
@@ -118,7 +118,7 @@ export default function ProdutosPage() {
       </div>
 
       <div id="products" data-section="products">
-        <ProductCardThree
+        <ProductCardFour
           title="Nossos Produtos Esotéricos"
           description="Explore nossa vasta coleção de cristais, tarots, incensos e artefatos mágicos para sua jornada espiritual."
           tag="Loja Mística"
@@ -126,6 +126,8 @@ export default function ProdutosPage() {
           animationType="slide-up"
           gridVariant="three-columns-all-equal-width"
           products={productsData}
+          textboxLayout="default"
+          useInvertedBackground={false}
         />
       </div>
 
