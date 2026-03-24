@@ -123,7 +123,7 @@ export default function ServicesPage() {
 
       <div id="contact" data-section="contact">
         <ContactText
-          text="Entre em Contato\n\nTem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
+          text="Entre em contato Tem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
           animationType="entrance-slide"
           buttons={[
             {
@@ -144,7 +144,7 @@ export default function ServicesPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384258720-xfgg2vm9.avif"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384774249-q72u25f1.avif"
           imageAlt="noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
