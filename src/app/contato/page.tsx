@@ -11,11 +11,11 @@ import { Sparkles, Mail, MessageCircle, Phone, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Produtos", href: "/produtos" },
-    { name: "Serviços", href: "/servicos" },
-    { name: "Sobre", href: "/sobre" },
-    { name: "Contato", href: "/contato" }
+    { name: "Home", id: "/" },
+    { name: "Produtos", id: "/produtos" },
+    { name: "Serviços", id: "/servicos" },
+    { name: "Sobre", id: "/sobre" },
+    { name: "Contato", id: "/contato" }
   ];
 
   const footerColumns = (currentPageId) => {
