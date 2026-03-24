@@ -97,7 +97,7 @@ export default function ServicesPage() {
               id: 1,
               title: "Leitura de Tarot",
               description: "Descubra os segredos do passado, presente e futuro através das cartas sagradas. Interpretação profunda e orientação espiritual.",
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-young-man-woman-outdoors_23-2148316073.jpg?_wi=2",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774387788928-5e4jdzoa.jpg",
             },
             {
               id: 2,
