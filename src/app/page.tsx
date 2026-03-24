@@ -198,7 +198,7 @@ export default function HomePage() {
 
       <div id="contact" data-section="contact">
         <ContactText
-          text="Entre em Contato\n\nTem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
+          text="Entre em Contato Tem dúvidas sobre nossos produtos e serviços? Quer agendar uma consulta espiritual? Entre em contato através de WhatsApp, telefone ou preencha o formulário abaixo. Responderemos com a maior brevidade."
           animationType="entrance-slide"
           buttons={[
             {
@@ -217,7 +217,7 @@ export default function HomePage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Magia do Brilho"
           copyrightText="© 2024 Magia do Brilho | Guardiãs da Magia Ancestral | Todos os direitos reservados"
