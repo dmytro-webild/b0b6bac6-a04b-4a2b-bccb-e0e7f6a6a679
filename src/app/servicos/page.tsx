@@ -113,9 +113,9 @@ export default function ServicesPage() {
             },
             {
               id: 4,
-              title: "Amarração Amorosa",
-              description: "Ritual ancestral para fortalecer laços amorosos e atrair amor genuíno em sua vida. Trabalho realizado com total sigilo.",
-              imageSrc: "http://img.b2bpic.net/free-photo/vodoo-doll-cross-arrangement-high-angle_23-2149622497.jpg?_wi=2",
+              title: "Baralho Cigano",
+              description: "leitura de cartas para orientação sobre amor, trabalho, decisões, etc.",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774388115189-ay740he4.jpg",
             },
           ]}
         />
