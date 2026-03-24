@@ -109,6 +109,7 @@ export default function ContactPage() {
 
       <div id="contact" data-section="contact">
         <ContactSplitForm
+          mediaAnimation="slide-up"
           title="Fale Conosco"
           description="Preencha o formulário abaixo para enviar uma mensagem. Nossa equipe responderá o mais breve possível."
           inputs={[
