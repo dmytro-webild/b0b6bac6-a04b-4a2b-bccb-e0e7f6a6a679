@@ -32,7 +32,7 @@ export default function ProductsPage() {
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple brandName="Arcana Mística" navItems={navItems} />
+        <NavbarStyleApple brandName="Magia Do Brilho" navItems={navItems} />
       </div>
 
       <div id="products" data-section="products">
@@ -166,7 +166,7 @@ Entre em contato com nosso time de especialistas. Estamos aqui para ajudar você
         <FooterMedia
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384867551-h92y3a9n.avif"
           imageAlt="Noite céu lua estrelas fundo místico"
-          logoText="Arcana Mística"
+          logoText="Magia Do Brilho"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
           columns={[
             {
