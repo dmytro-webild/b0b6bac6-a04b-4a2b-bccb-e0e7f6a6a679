@@ -19,7 +19,7 @@ export default function ContactPage() {
   ];
 
   const footerColumns = (currentPageId) => {
-    const faqHref = "/#faq"; // Default to home page FAQ
+    const faqHref = "/#faq"; // Default to home page FAQ as Contact page does not have its own FAQ
 
     return [
       {
@@ -37,6 +37,14 @@ export default function ContactPage() {
           { label: "Email", href: "mailto:contato@magiadobrilho.com.br" },
           { label: "Telefone", href: "tel:+5511984516698" },
           { label: "Localização", href: "#" }
+        ]
+      },
+      {
+        title: "Redes Sociais",        items: [
+          { label: "Instagram", href: "https://instagram.com/magiadobrilho" },
+          { label: "Facebook", href: "https://facebook.com/magiadobrilho" },
+          { label: "TikTok", href: "https://tiktok.com/@magiadobrilho" },
+          { label: "YouTube", href: "https://youtube.com/@magiadobrilho" }
         ]
       },
       {
@@ -274,7 +282,7 @@ export default function ContactPage() {
           imageSrc="https://images.unsplash.com/photo-1594770648818-b80c3e7d6b38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Magia do Brilho"
-          copyrightText="© 2024 Magia do Brilho | Todos os direitos reservados"
+          copyrightText="© 2024 Magia do Brilho | Guardiãs da Magia Ancestral | Todos os direitos reservados"
           columns={footerColumns("contato")}
         />
       </div>
