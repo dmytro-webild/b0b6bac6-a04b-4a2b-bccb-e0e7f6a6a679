@@ -164,7 +164,7 @@ Entre em contato com nosso time de especialistas. Estamos aqui para ajudar você
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=2"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384867551-h92y3a9n.avif"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Arcana Mística"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
