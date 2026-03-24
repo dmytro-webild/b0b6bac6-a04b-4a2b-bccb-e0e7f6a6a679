@@ -11,11 +11,11 @@ import { Sparkles, Mail, MessageCircle, Phone, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   const navItems = [
-    { name: "Home", id: "home", href: "/" },
-    { name: "Produtos", id: "products", href: "/produtos" },
-    { name: "Serviços", id: "services", href: "/servicos" },
-    { name: "Sobre", id: "about", href: "/sobre" },
-    { name: "Contato", id: "contact", href: "/contato" },
+    { name: "Home", href: "/" },
+    { name: "Produtos", href: "/produtos" },
+    { name: "Serviços", href: "/servicos" },
+    { name: "Sobre", href: "/sobre" },
+    { name: "Contato", href: "/contato" }
   ];
 
   const footerColumns = (currentPageId) => {
@@ -28,36 +28,37 @@ export default function ContactPage() {
           { label: "Produtos", href: "/produtos" },
           { label: "Serviços", href: "/servicos" },
           { label: "Sobre", href: "/sobre" },
-          { label: "Contato", href: "/contato" },
-        ],
+          { label: "Contato", href: "/contato" }
+        ]
       },
       {
         title: "Contato",        items: [
           { label: "WhatsApp", href: "https://wa.me/5511984516698" },
           { label: "Email", href: "mailto:contato@magiadobrilho.com.br" },
           { label: "Telefone", href: "tel:+5511984516698" },
-          { label: "Localização", href: "#" },
-        ],
+          { label: "Localização", href: "#" }
+        ]
       },
       {
         title: "Informações Legais",        items: [
           { label: "Política de Privacidade", href: "#" },
           { label: "Termos de Serviço", href: "#" },
           { label: "Troca e Devolução", href: "#" },
-          { label: "FAQ", href: faqHref }, // Dynamic FAQ link
-        ],
-      },
+          { label: "FAQ", href: faqHref }
+        ]
+      }
     ];
   };
 
   const [formData, setFormData] = useState({
-    name: "",    email: "",    phone: "",    subject: "",    message: ""});
+    name: "",    email: "",    phone: "",    subject: "",    message: ""
+  });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: value
     }));
   };
 
@@ -95,20 +96,26 @@ export default function ContactPage() {
           tagAnimation="slide-up"
           buttons={[
             {
-              text: "WhatsApp",              href: "https://wa.me/5511984516698"},
+              text: "WhatsApp",              href: "https://wa.me/5511984516698"
+            },
             {
-              text: "Voltar ao Início",              href: "/"},
+              text: "Voltar ao Início",              href: "/"
+            }
           ]}
           buttonAnimation="slide-up"
           background={{
-            variant: "sparkles-gradient"}}
+            variant: "sparkles-gradient"
+          }}
           mediaItems={[
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-reading-tarot_23-2150273168.jpg?_wi=1",              imageAlt: "Cartas de tarot dispostas em círculo sagrado"},
+              imageSrc: "http://img.b2bpic.net/free-photo/high-angle-woman-reading-tarot_23-2150273168.jpg?_wi=1",              imageAlt: "Cartas de tarot dispostas em círculo sagrado"
+            },
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg?_wi=1",              imageAlt: "Velas roxas e douradas em altar espiritual"},
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg?_wi=1",              imageAlt: "Velas roxas e douradas em altar espiritual"
+            },
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg?_wi=1",              imageAlt: "Cristais esotéricos brilhando com energia mágica"},
+              imageSrc: "http://img.b2bpic.net/free-photo/view-hand-rocks-arrangement_23-2149324173.jpg?_wi=1",              imageAlt: "Cristais esotéricos brilhando com energia mágica"
+            }
           ]}
         />
       </div>
@@ -245,16 +252,19 @@ export default function ContactPage() {
         <ContactCTA
           tag="Próximo Passo"
           title="Pronto para Sua Jornada Espiritual?"
-          description="Entre em contato conosco agora e descubra como a magia ancestral pode transformar sua vida. Nossa equipe está pronta para acolhê-lo."
+          description="Entre em contato conosco agora e descubra como a magia do brilho pode transformar sua vida. Nossa equipe está pronta para acolhê-lo."
           buttons={[
             {
-              text: "Agendar Consulta",              href: "https://wa.me/5511984516698"},
+              text: "Agendar Consulta",              href: "https://wa.me/5511984516698"
+            },
             {
-              text: "Explorar Produtos",              href: "/produtos"},
+              text: "Explorar Produtos",              href: "/produtos"
+            }
           ]}
           buttonAnimation="slide-up"
           background={{
-            variant: "sparkles-gradient"}}
+            variant: "sparkles-gradient"
+          }}
           useInvertedBackground={false}
         />
       </div>
