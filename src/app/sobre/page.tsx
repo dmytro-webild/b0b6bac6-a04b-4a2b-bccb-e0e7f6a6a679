@@ -33,7 +33,7 @@ export default function AboutPage() {
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple brandName="Arcana Mística" navItems={navItems} />
+        <NavbarStyleApple brandName="Magia Do Brilho " navItems={navItems} />
       </div>
 
       <div id="hero" data-section="hero">
@@ -144,9 +144,9 @@ export default function AboutPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-constellations-seaside_23-2149988816.jpg?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774385178995-ing5t0li.avif"
           imageAlt="Noite céu lua estrelas fundo místico"
-          logoText="Arcana Mística"
+          logoText="Magia Do Brilho"
           copyrightText="© 2024 Arcana Mística | Guardiãs da Magia Ancestral | Todos os direitos reservados"
           columns={[
             {
