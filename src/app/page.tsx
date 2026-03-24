@@ -217,7 +217,7 @@ export default function HomePage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/stars-night-sky-moon-magical-abstract_23-2149324147.jpg?_wi=2"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774387653310-e23iaf6p.avif"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Magia do Brilho"
           copyrightText="© 2024 Magia do Brilho | Guardiãs da Magia Ancestral | Todos os direitos reservados"
