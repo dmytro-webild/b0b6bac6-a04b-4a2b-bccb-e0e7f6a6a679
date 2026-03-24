@@ -97,7 +97,7 @@ export default function ProdutosPage() {
     {
       id: "5",      name: "Vela Aromática Esotérica",      price: "R$ 60,00",      imageSrc: "http://img.b2bpic.net/free-photo/close-up-candle-rain_23-2147785889.jpg?_wi=2",      imageAlt: "Vela aromática", variant: "Standard"},
     {
-      id: "6",      name: "Pêndulo de Radiestesia",      price: "R$ 80,00",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif",      imageAlt: "Pêndulo para radiestesia", variant: "Standard"}
+      id: "6",      name: "Pêndulo de Radiestesia",      price: "R$ 80,00",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif?_wi=1",      imageAlt: "Pêndulo para radiestesia", variant: "Standard"}
   ];
 
   return (
@@ -133,7 +133,7 @@ export default function ProdutosPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BAz702DYgWn4ffNIK3qljhXzck/uploaded-1774384170242-d3z2ni04.avif?_wi=2"
           imageAlt="Noite céu lua estrelas fundo místico"
           logoText="Magia do Brilho"
           copyrightText="© 2024 Magia do Brilho | Guardiãs da Magia Ancestral | Todos os direitos reservados"
